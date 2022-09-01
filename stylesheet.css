@@ -1,0 +1,39 @@
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  }
+
+.navbar ul li {
+  float: right;
+}
+
+.navbar ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navbar ul li a:hover {
+  background-color: #111;
+
+}
+
+body, html {
+  height: 99%
+}
+body {
+	background-image: url(backround.jpg);
+	background-repeat: no-repeat;
+	height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
