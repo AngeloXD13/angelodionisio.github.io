@@ -3,25 +3,45 @@
     <head>
         <title>Angelo's Portfolio</title>
         <link rel="stylesheet" href="stylesheet.css">
+		<script type="text/javascript" src="javascript.js"></script>
     </head>
 
     <body>
-		<header>
-			<div class="navbar">
-            	<ul>
-					<li><a>About Me</a></li>
-					<li><a>Contact</a></li>
-					<li><a>Hobbies</a></li>
-					<li><a>Skills</a></li>
-					<li><a>Home</a></li>
-            	</ul>
+		<div class="bg-image"></div>
+		<div class="content">
+			<!-- The overlay -->
+			<div id="myNav" class="overlay">
+				<!-- Button to close the overlay navigation -->
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<!-- Overlay content -->
+				<div class="overlay-content">
+					<a href="#">Home</a>
+					<a href="#">About Me</a>
+					<a href="#">Skills</a>
+					<a href="#">Hobbies</a>
+					<a href="#">Contact</a>				
+				</div>
+				
+				
 			</div>
-		</header>
-      
+			<span onclick="openNav()">
+					<svg class="hamburger_btn" width="48px" height="48px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+						<title>70 Basic icons by Xicons.co</title>
+						<path d="M41,14H7a2,2,0,0,1,0-4H41A2,2,0,0,1,41,14Z" fill="#6f7380"/>
+						<path d="M41,26H7a2,2,0,0,1,0-4H41A2,2,0,0,1,41,26Z" fill="#6f7380"/>
+						<path d="M41,38H7a2,2,0,0,1,0-4H41A2,2,0,0,1,41,38Z" fill="#6f7380"/>
+					</svg>
+				</span>
         <h1>Hello World</h1>
+		
+		</div>
+			
 
 
+		
+		<!-- Use any element to open/show the overlay navigation menu -->
+		
     </body>
 
-
+	
 </html>
