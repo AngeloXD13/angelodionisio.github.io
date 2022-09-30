@@ -114,12 +114,25 @@ color: #f1f1f1;
 
 }
 
+.banner h1 {
+  float: left;
+  margin-right: 10%;
+  height: 45.0em;
+  margin-top: 25%;
+  margin-bottom: 25%;
+  max-height: 50.0em;
+  box-sizing: border-box;
+  font-size: 5.0em;
+  position: absolute
+}
+
 .banner #planet_svg {
     float: right;
-    margin-right: 135px;
-    height: 451px;
-    margin-top: 73px;
-    margin-left: 303px;
+    margin-right: 10%;
+    height: 45.0em;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    max-height: 50.0em;
     box-sizing: border-box;
 }
 
