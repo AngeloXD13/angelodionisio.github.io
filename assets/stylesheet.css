@@ -180,7 +180,7 @@ color: #f1f1f1;
 
 .bg-image {
     /* The image used */
-    background-image: url("/assets/images/backround.jpg");
+    background-image: url("../assets/images/backround.jpg");
     /* Add the blur effect */
     filter: brightness(50%);
     -webkit-filter: brightness(50%);
@@ -266,7 +266,7 @@ color: #f1f1f1;
     z-index: 4;
     width: 100%;
     box-sizing: border-box;
-    -webkit-mask-image: url("/assets/svg/planet.svg");
+    -webkit-mask-image: url("../assets/svg/planet.svg");
     mask-image: url(../planet.svg);
     mask-mode: alpha;
 	z-index: 6;
