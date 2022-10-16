@@ -1,64 +1,14 @@
 
 window.onload = function() {
     Changingtitle();
-    //ChangingtitleV2;
-    //animationtitles();
-   
 }
-
-
-function animationtitles() {
-
-
-    // Wrap every letter in a span
-    var textWrapper = document.querySelector('.role_subtitle .letters');
-    textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
-
-    animation = anime.timeline({loop: false})
-    .add({
-        targets: '.role_subtitle .line',
-        scaleY: [0,1],
-        opacity: [0.5,1],
-        easing: "easeOutExpo",
-        duration: 700
-    })
-    .add({
-        targets: '.role_subtitle .line',
-        translateX: [0, document.querySelector('.role_subtitle .letters').getBoundingClientRect().width + 10],
-        easing: "easeOutExpo",
-        duration: 700,
-        delay: 100
-    }).add({
-        targets: '.role_subtitle .letter',
-        opacity: [0,1],
-        easing: "easeOutExpo",
-        duration: 600,
-        offset: '-=775',
-        delay: (el, i) => 34 * (i+1)
-    }).add({
-        targets: '.role_subtitle',
-        opacity: 0,
-        duration: 1000,
-        easing: "easeOutExpo",
-        delay: 1000
-    });
-    //animation.reverse;
-
-}
-
-
-
-
-// Changing role title =============================
-//Changingtitle(0);
 
 var repeat = 0;
-
 function Changingtitle() {
-    
+
+    // for documentation how to implement this function go to: https://animejs.com/
     var textWrapper = document.querySelector('.role_subtitle .letters');
     textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w|\.)/g, "<span class='letter'>$&</span>");
-    
     
     var animation = anime.timeline({
         loop: false,
@@ -99,8 +49,7 @@ function Changingtitle() {
         easing: "easeOutExpo",
         duration: 1000,
         offset: '-=775',
-        delay: (el, i) => 20 * (i+1),
-        
+        delay: (el, i) => 20 * (i+1), 
     })
     .add({
         targets: '.role_subtitle .line',
@@ -127,8 +76,6 @@ function Changingtitle() {
         },
         duration: 50
     });
-
-    
 }
 
 function ChangeText(n){
@@ -142,28 +89,4 @@ function ChangeText(n){
     }
     Changingtitle();
 
-}
-
-function ChangingtitleV2() {
-    const title = new Array("Programmer", "Designer", "Technician", "Developer", "DYIer", "Experimenter", "Coder");
-    var textWrapper = document.querySelector('.role_subtitle .letters');
-    var repeat = 0;
-
-    textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w|\.)/g, "<span class='letter'>$&</span>");
-    
-    anime({
-        targets: '.line',
-        translateX: 240,
-        loop: true,
-        direction: 'alternate',
-        easing: 'easeInOutCirc',
-        loopBegin: function(anim) {
-          loopBegan++;
-          //beginLogEl.value = 'loop began : ' + loopBegan;
-        },
-        loopComplete: function(anim) {
-          loopCompleted++;
-          //completeLogEl.value = 'loop completed : ' + loopCompleted;
-        }
-      });
 }
