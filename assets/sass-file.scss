@@ -1,0 +1,31 @@
+.flying_objects{
+	position:absolute;
+	bottom: -100vh;
+	transform-style: preserve-3d;
+}
+
+.flying_objects_container {
+    perspective-origin: 50% 50%;
+  }
+
+$total: 8;
+@for $i from 1 through $total {
+	$scale:random(2) - .4;
+	
+	.flying_objects:nth-child(#{$i}){
+		left:random(120) * 1% - 20;
+		animation: raise#{$i} 6 + random(15) +s linear infinite;
+		animation-delay:random(5) - 5 + s;
+		transform: scale(0.6 * $i - .6) rotate(random(360) + deg);
+		z-index: $i - 7;
+		filter: blur($i - 6 + px);
+        filter: brightness(.6);
+
+	  @keyframes raise#{$i} {
+		  to{
+			 bottom:150vh;
+			 transform: scale(.3 * $i - .6) rotate(random(360) + deg);
+			}
+		}
+	}
+}
