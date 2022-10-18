@@ -246,6 +246,7 @@ header h1 {
   top: 9vmin;
   bottom: 9vmin;
   box-sizing: border-box;
+ 
 }
 
 .banner .planet_container #planet_svg {
@@ -253,6 +254,9 @@ header h1 {
   z-index: 3;
   width: auto;
   box-sizing: border-box;
+  transform: translateY(0);
+  -webkit-animation: upanddown 5s ease-in-out infinite normal;
+  animation: upanddown 5s ease-in-out infinite normal;
 }
 
 .banner .planet_container #planet_svg_mask {
@@ -271,6 +275,8 @@ header h1 {
   mask-image: url(../planet.svg);
   mask-mode: alpha;
   z-index: 6;
+  -webkit-animation: upanddown 5s ease-in-out infinite normal;
+  animation: upanddown 5s ease-in-out infinite normal;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
@@ -338,5 +344,102 @@ header h1 {
   .banner .planet_container #planet_svg {
     width: auto;
     height: 65vw;
+  }
+
+  .flying_objects_container #astronout svg {
+    width: 50px;
+  }
+  .flying_objects_container #rocket svg {
+    width: 75px;
+  }
+  .flying_objects_container #rock svg {
+    width: 25px;
+  }
+  .flying_objects_container #sparkles svg {
+    width: 59px;
+  }
+  .flying_objects_container #star svg {
+    width: 20px;
+  }
+}
+
+
+@-webkit-keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@-webkit-keyframes upanddown {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform : translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(20px);
+    transform : translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+  }
+}
+@keyframes upanddown {
+  0% {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform : translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform : translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
   }
 }

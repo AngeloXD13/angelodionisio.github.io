@@ -18,8 +18,7 @@ $total: 8;
 		animation-delay:random(5) - 5 + s;
 		transform: scale(0.6 * $i - .6) rotate(random(360) + deg);
 		z-index: $i - 7;
-		filter: blur($i - 6 + px);
-        filter: brightness(.6);
+		filter: blur($i - 6 + px) brightness(.6);
 
 	  @keyframes raise#{$i} {
 		  to{
