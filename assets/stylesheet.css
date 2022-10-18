@@ -246,7 +246,6 @@ header h1 {
   top: 9vmin;
   bottom: 9vmin;
   box-sizing: border-box;
- 
 }
 
 .banner .planet_container #planet_svg {
@@ -363,7 +362,6 @@ header h1 {
   }
 }
 
-
 @-webkit-keyframes breathing {
   0% {
     -webkit-transform: scale(0.9);
@@ -415,11 +413,11 @@ header h1 {
 @-webkit-keyframes upanddown {
   0% {
     -webkit-transform: translateY(0px);
-    transform : translateY(0px);
+    transform: translateY(0px);
   }
   50% {
     -webkit-transform: translateY(20px);
-    transform : translateY(20px);
+    transform: translateY(20px);
   }
   100% {
     transform: translateY(0px);
@@ -430,12 +428,12 @@ header h1 {
   0% {
     -webkit-transform: translateY(0px);
     -ms-transform: translateY(0px);
-    transform : translateY(0px);
+    transform: translateY(0px);
   }
   50% {
     -webkit-transform: translateY(20px);
     -ms-transform: translateY(20px);
-    transform : translateY(20px);
+    transform: translateY(20px);
   }
   100% {
     transform: translateY(0px);
