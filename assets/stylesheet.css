@@ -1,4 +1,10 @@
 * {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -267,7 +273,6 @@ header h1 {
 }
 
 .content_jackofalltrades {
-  
 }
 .content_jackofalltrades #content_jackofalltrades_particles {
   position: absolute;
@@ -286,22 +291,20 @@ header h1 {
 
   margin-left: 20%;
   margin-right: 20%;
-  margin-top: 10%;
+  margin-top: 8%;
   margin-bottom: 10%;
 
   position: absolute;
   z-index: 2;
-}
-.container_content_jackofalltrades #content_jackofalltrades_img{
 
+}
+.container_content_jackofalltrades #content_jackofalltrades_img {
   height: 250px;
   z-index: 5;
- 
-
 }
 
 .container_content_jackofalltrades h1 {
-  font-family: 'Agency FB';
+  font-family: "Agency FB";
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
@@ -309,24 +312,29 @@ header h1 {
   display: flex;
   align-items: center;
   text-align: center;
-  
-  color: #FFFFFF;
 
+  color: #ffffff;
 }
 
 .container_content_jackofalltrades p {
-  font-family: 'Agency FB';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 24px;
-display: flex;
-align-items: center;
-text-align: center;
+  font-family: "Agency FB";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 
-color: #FFFFFF;
+  color: #ffffff;
 }
 
+.container_content_jackofalltrades_skills svg {
+  width: 75px;
+  position: absolute;
+  fill: #ffffff;
+  color: #ffffff;
+}
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
   .overlay a {

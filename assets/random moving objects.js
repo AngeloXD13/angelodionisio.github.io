@@ -134,7 +134,7 @@ function particles_nasa() {
             "nb_sides": 5
           },
           "image": {
-            "src": "img/github.svg",
+            "src": "../assets/svg/planet.svg",
             "width": 100,
             "height": 100
           }
