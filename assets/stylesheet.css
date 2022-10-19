@@ -296,7 +296,6 @@ header h1 {
 
   position: absolute;
   z-index: 2;
-
 }
 .container_content_jackofalltrades #content_jackofalltrades_img {
   height: 250px;
@@ -329,11 +328,93 @@ header h1 {
   color: #ffffff;
 }
 
+.container_content_jackofalltrades_skills {
+  width: 75%;
+  height: 103%;
+  position: absolute;
+}
+
+.container_content_jackofalltrades_skills #skill_1 {
+  left: 31.11px;
+  right: 689.48px;
+  top: 186.01px;
+  width: 52px;
+  animation-delay: 900ms;
+  
+}
+
+.container_content_jackofalltrades_skills #skill_2 {
+  top: 78px;
+  right: 59px;
+  animation-delay: 500ms;
+}
+
+.container_content_jackofalltrades_skills #skill_3 {
+  top: -19px;
+  right: 105px;
+  animation-delay: 300ms;
+}
+
+.container_content_jackofalltrades_skills #skill_4 {
+  left: 226px;
+  height: 73px;
+  top: -55px;
+  animation-delay: 800ms;
+}
+
+.container_content_jackofalltrades_skills #skill_5 {
+  left: 104px;
+  animation-delay: 600ms;
+}
+
+.container_content_jackofalltrades_skills #skill_6 {
+  left: 38px;
+  top: 84px;
+  height: 60px;
+  animation-delay: 500ms;
+}
+
+.container_content_jackofalltrades_skills #skill_7 {
+  top: 180px;
+  height: 60px;
+  right: 12px;
+  animation-delay: 400ms;
+}
+
+.container_content_jackofalltrades_skills #skill_8 {
+  height: 35px;
+  left: 122px;
+  top: 115px;
+  animation-delay: 500ms;
+  -webkit-animation: breathingandrotating 3s ease-in-out infinite normal;
+  animation: breathingandrotating 3s ease-in-out infinite normal;
+}
+
+.container_content_jackofalltrades_skills #skill_9 {
+  height: 35px;
+  top: 120px;
+  right: 129px;
+  animation-delay: 1000ms;
+  -webkit-animation: breathingandrotating 1s ease-in-out infinite normal;
+  animation: breathingandrotating 1s ease-in-out infinite normal;
+}
+
+.container_content_jackofalltrades_skills #skill_10 {
+  height: 35px;
+  top: -26px;
+  right: 193px;
+  animation-delay: 100ms;
+  
+  
+}
+
 .container_content_jackofalltrades_skills svg {
   width: 75px;
   position: absolute;
   fill: #ffffff;
   color: #ffffff;
+  -webkit-animation: breathing 1s ease-in-out infinite normal;
+  animation: breathing 1s ease-in-out infinite normal;
 }
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
@@ -420,50 +501,41 @@ header h1 {
 }
 
 @-webkit-keyframes breathing {
+  
   0% {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-  }
-
-  25% {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
 
-  60% {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
+ 50% {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
   }
 
   100% {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes breathing {
-  0% {
-    -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    transform: scale(0.9);
-  }
 
-  25% {
+  0% {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
   }
 
-  60% {
-    -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    transform: scale(0.9);
+  50% {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
   }
 
   100% {
-    -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    transform: scale(0.9);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
   }
 }
 
@@ -496,5 +568,44 @@ header h1 {
     transform: translateY(0px);
     -webkit-transform: translateY(0px);
     -ms-transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes breathingandrotating {
+  
+  0% {
+    -webkit-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
+  }
+
+ 50% {
+    -webkit-transform: scale(0.7)  rotate(90deg);
+    transform: scale(0.7)  rotate(90deg);
+  }
+
+  100% {
+    -webkit-transform: scale(1)  rotate(0eg);
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes breathingandrotating {
+
+  0% {
+    -webkit-transform: scale(1) rotate(0deg) ;
+    -ms-transform: scale(1) rotate(0deg);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(0.7) rotate(90deg);
+    -ms-transform: scale(0.7) rotate(90deg);
+    transform: scale(0.7) rotate(90deg);
+  }
+
+  100% {
+    -webkit-transform: scale(1) rotate(0deg);
+    -ms-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
   }
 }
