@@ -272,34 +272,33 @@ header h1 {
   width: 75px;
 }
 
-.content_jackofalltrades {
-}
+.content_jackofalltrades {height: auto;/* display: flex; *//* align-content: center; */}
 .content_jackofalltrades #content_jackofalltrades_particles {
   position: absolute;
   box-sizing: border-box;
-  background-color: black;
   width: 100%;
   height: 100%;
+  min-height: 639px;
+  z-index: 5;
 }
 .container_content_jackofalltrades {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px;
   isolation: isolate;
-
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 8%;
-  margin-bottom: 10%;
-
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 8%;
+  padding-bottom: 8%;
   position: absolute;
   z-index: 2;
-}
-.container_content_jackofalltrades #content_jackofalltrades_img {
-  height: 250px;
-  z-index: 5;
+  width: 100%;
+  height: 100%;
+  min-height: 639px;
+  box-sizing: border-box;
+  background-color: black;
+  justify-content: space-around;
 }
 
 .container_content_jackofalltrades h1 {
@@ -329,18 +328,27 @@ header h1 {
 }
 
 .container_content_jackofalltrades_skills {
-  width: 75%;
-  height: 103%;
-  position: absolute;
+  width: 605px;
+  height: 435px;
+  position: relative;
+  min-height: 268px;
 }
 
+.container_content_jackofalltrades_skills #content_jackofalltrades_img {
+  height: 250px;
+  width: 350px;
+  z-index: 5;
+  -webkit-animation: none;
+  animation: none;
+  right: 125px;
+  z-index: 7;
+}
 .container_content_jackofalltrades_skills #skill_1 {
   left: 31.11px;
   right: 689.48px;
   top: 186.01px;
   width: 52px;
   animation-delay: 900ms;
-  
 }
 
 .container_content_jackofalltrades_skills #skill_2 {
@@ -368,8 +376,9 @@ header h1 {
 }
 
 .container_content_jackofalltrades_skills #skill_6 {
-  left: 38px;
-  top: 84px;
+  
+  left: 42px;
+  top: 99px;
   height: 60px;
   animation-delay: 500ms;
 }
@@ -404,8 +413,6 @@ header h1 {
   top: -26px;
   right: 193px;
   animation-delay: 100ms;
-  
-  
 }
 
 .container_content_jackofalltrades_skills svg {
@@ -429,6 +436,10 @@ header h1 {
 }
 
 @media screen and (max-width: 767px) {
+  body {
+    height: auto;
+  }
+
   .bg-image {
     min-height: 110vw;
   }
@@ -450,8 +461,11 @@ header h1 {
     align-items: center;
     gap: 10px;
     width: 100%;
-    min-height: 100%;
-    position: absolute;
+    min-height: 100vw;
+    position: relative;
+    overflow-x: hidden;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
   }
 
   .banner .banner_title {
@@ -469,8 +483,8 @@ header h1 {
   }
 
   .banner .banner_title .role_subtitle {
-    font-size: 8vh;
-    line-height: 10vh;
+    font-size: 8vw;
+    line-height: 8vw;
   }
 
   .banner .planet_container #profile_pic {
@@ -498,16 +512,128 @@ header h1 {
   .flying_objects_container #star svg {
     width: 20px;
   }
+
+  .container_content_jackofalltrades h1 {
+    font-size: 8vw;
+    line-height: 77px;
+  }
+
+  .container_content_jackofalltrades p {
+    font-size: 3vw;
+  }
+
+  .container_content_jackofalltrades_skills {
+    width: 340px;
+    height: 91px;
+    min-height: 201px;
+  }
+
+  .container_content_jackofalltrades_skills #content_jackofalltrades_img {
+    height: 153px;
+    width: 250px;
+    right: 44px;
+    bottom: 0px;
+  }
+
+  .container_content_jackofalltrades {
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 0px;
+    /* height: auto; */
+    display: flex;
+    justify-content: center;
+    /* min-height: 492px; */
+  }
+
+  .container_content_jackofalltrades_skills svg {
+    width: 37px;
+   
+  }
+	
+	.container_content_jackofalltrades_skills #skill_1 {
+    width: 28px;
+    animation-delay: 900ms;
+    left: 29px;
+    top: 172px;
+}
+
+.container_content_jackofalltrades_skills #skill_2 {
+    top: 113px;
+    right: 51px;
+    animation-delay: 500ms;
+}
+
+.container_content_jackofalltrades_skills #skill_3 {
+    top: 61px;
+    right: 77px;
+    animation-delay: 300ms;
+}
+
+.container_content_jackofalltrades_skills #skill_4 {
+    left: 173px;
+    height: 73px;
+    top: -1px;
+    animation-delay: 800ms;
+}
+
+.container_content_jackofalltrades_skills #skill_5 {
+    left: 71px;
+    animation-delay: 600ms;
+    top: 64px;
+}
+	
+	.container_content_jackofalltrades_skills #skill_6 {
+    left: 40px;
+    top: 105px;
+    height: 60px;
+    animation-delay: 500ms;
+}
+
+
+.container_content_jackofalltrades_skills #skill_7 {
+    top: 150px;
+    height: 60px;
+    right: 31px;
+    animation-delay: 400ms;
+}
+
+.container_content_jackofalltrades_skills #skill_8 {
+    height: 19px;
+    left: 83px;
+    top: 137px;
+    animation-delay: 500ms;
+    -webkit-animation: breathingandrotating 3s ease-in-out infinite normal;
+    animation: breathingandrotating 3s ease-in-out infinite normal;
+}
+
+.container_content_jackofalltrades_skills #skill_9 {
+    height: 18px;
+    right: 88px;
+    animation-delay: 1000ms;
+    -webkit-animation: breathingandrotating 1s ease-in-out infinite normal;
+    animation: breathingandrotating 1s ease-in-out infinite normal;
+    top: 139px;
+}
+
+.container_content_jackofalltrades_skills #skill_10 {
+    height: 24px;
+    top: 23px;
+    right: 180px;
+    animation-delay: 100ms;
+}
+  .content_jackofalltrades #content_jackofalltrades_particles {
+ /* height: auto; */
+ /* min-height: 492px; */
+}
 }
 
 @-webkit-keyframes breathing {
-  
   0% {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
 
- 50% {
+  50% {
     -webkit-transform: scale(0.7);
     transform: scale(0.7);
   }
@@ -519,7 +645,6 @@ header h1 {
 }
 
 @keyframes breathing {
-
   0% {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -553,6 +678,7 @@ header h1 {
     -webkit-transform: translateY(0px);
   }
 }
+
 @keyframes upanddown {
   0% {
     -webkit-transform: translateY(0px);
@@ -572,27 +698,25 @@ header h1 {
 }
 
 @-webkit-keyframes breathingandrotating {
-  
   0% {
     -webkit-transform: scale(1) rotate(0deg);
     transform: scale(1) rotate(0deg);
   }
 
- 50% {
-    -webkit-transform: scale(0.7)  rotate(90deg);
-    transform: scale(0.7)  rotate(90deg);
+  50% {
+    -webkit-transform: scale(0.7) rotate(90deg);
+    transform: scale(0.7) rotate(90deg);
   }
 
   100% {
-    -webkit-transform: scale(1)  rotate(0eg);
+    -webkit-transform: scale(1) rotate(0eg);
     transform: scale(1) rotate(0deg);
   }
 }
 
 @keyframes breathingandrotating {
-
   0% {
-    -webkit-transform: scale(1) rotate(0deg) ;
+    -webkit-transform: scale(1) rotate(0deg);
     -ms-transform: scale(1) rotate(0deg);
     transform: scale(1);
   }
@@ -609,3 +733,4 @@ header h1 {
     transform: scale(1) rotate(0deg);
   }
 }
+
