@@ -1,0 +1,22 @@
+{
+  "name": "angelodionisio_portfolio",
+  "version": "1.0.0",
+  "description": "Angelo's Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngeloXD13/angelodionisio_portfolio.git"
+  },
+  "author": "AngeloXD13",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AngeloXD13/angelodionisio_portfolio/issues"
+  },
+  "homepage": "https://github.com/AngeloXD13/angelodionisio_portfolio#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}
