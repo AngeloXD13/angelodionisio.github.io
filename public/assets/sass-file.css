@@ -1,0 +1,193 @@
+.flying_objects {
+  position: absolute;
+  bottom: -100vh;
+  transform-style: preserve-3d;
+}
+
+.flying_objects_container {
+  perspective-origin: 50% 50%;
+}
+
+.flying_objects:nth-child(1) {
+  left: 76%;
+  -webkit-animation: raise1 13s linear infinite;
+          animation: raise1 13s linear infinite;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  transform: scale(0) rotate(311deg);
+  z-index: -6;
+  filter: blur(-5px) brightness(0.6);
+}
+@-webkit-keyframes raise1 {
+  to {
+    bottom: 150vh;
+    transform: scale(-0.3) rotate(40deg);
+  }
+}
+@keyframes raise1 {
+  to {
+    bottom: 150vh;
+    transform: scale(-0.3) rotate(40deg);
+  }
+}
+
+.flying_objects:nth-child(2) {
+  left: 100%;
+  -webkit-animation: raise2 16s linear infinite;
+          animation: raise2 16s linear infinite;
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+  transform: scale(0.6) rotate(117deg);
+  z-index: -5;
+  filter: blur(-4px) brightness(0.6);
+}
+@-webkit-keyframes raise2 {
+  to {
+    bottom: 150vh;
+    transform: scale(0) rotate(64deg);
+  }
+}
+@keyframes raise2 {
+  to {
+    bottom: 150vh;
+    transform: scale(0) rotate(64deg);
+  }
+}
+
+.flying_objects:nth-child(3) {
+  left: -6%;
+  -webkit-animation: raise3 18s linear infinite;
+          animation: raise3 18s linear infinite;
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+  transform: scale(1.2) rotate(346deg);
+  z-index: -4;
+  filter: blur(-3px) brightness(0.6);
+}
+@-webkit-keyframes raise3 {
+  to {
+    bottom: 150vh;
+    transform: scale(0.3) rotate(168deg);
+  }
+}
+@keyframes raise3 {
+  to {
+    bottom: 150vh;
+    transform: scale(0.3) rotate(168deg);
+  }
+}
+
+.flying_objects:nth-child(4) {
+  left: 93%;
+  -webkit-animation: raise4 14s linear infinite;
+          animation: raise4 14s linear infinite;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  transform: scale(1.8) rotate(182deg);
+  z-index: -3;
+  filter: blur(-2px) brightness(0.6);
+}
+@-webkit-keyframes raise4 {
+  to {
+    bottom: 150vh;
+    transform: scale(0.6) rotate(339deg);
+  }
+}
+@keyframes raise4 {
+  to {
+    bottom: 150vh;
+    transform: scale(0.6) rotate(339deg);
+  }
+}
+
+.flying_objects:nth-child(5) {
+  left: -18%;
+  -webkit-animation: raise5 7s linear infinite;
+          animation: raise5 7s linear infinite;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+  transform: scale(2.4) rotate(80deg);
+  z-index: -2;
+  filter: blur(-1px) brightness(0.6);
+}
+@-webkit-keyframes raise5 {
+  to {
+    bottom: 150vh;
+    transform: scale(0.9) rotate(243deg);
+  }
+}
+@keyframes raise5 {
+  to {
+    bottom: 150vh;
+    transform: scale(0.9) rotate(243deg);
+  }
+}
+
+.flying_objects:nth-child(6) {
+  left: 70%;
+  -webkit-animation: raise6 9s linear infinite;
+          animation: raise6 9s linear infinite;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  transform: scale(3) rotate(207deg);
+  z-index: -1;
+  filter: blur(0px) brightness(0.6);
+}
+@-webkit-keyframes raise6 {
+  to {
+    bottom: 150vh;
+    transform: scale(1.2) rotate(150deg);
+  }
+}
+@keyframes raise6 {
+  to {
+    bottom: 150vh;
+    transform: scale(1.2) rotate(150deg);
+  }
+}
+
+.flying_objects:nth-child(7) {
+  left: -1%;
+  -webkit-animation: raise7 14s linear infinite;
+          animation: raise7 14s linear infinite;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  transform: scale(3.6) rotate(313deg);
+  z-index: 0;
+  filter: blur(1px) brightness(0.6);
+}
+@-webkit-keyframes raise7 {
+  to {
+    bottom: 150vh;
+    transform: scale(1.5) rotate(284deg);
+  }
+}
+@keyframes raise7 {
+  to {
+    bottom: 150vh;
+    transform: scale(1.5) rotate(284deg);
+  }
+}
+
+.flying_objects:nth-child(8) {
+  left: 43%;
+  -webkit-animation: raise8 16s linear infinite;
+          animation: raise8 16s linear infinite;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+  transform: scale(4.2) rotate(348deg);
+  z-index: 1;
+  filter: blur(2px) brightness(0.6);
+}
+@-webkit-keyframes raise8 {
+  to {
+    bottom: 150vh;
+    transform: scale(1.8) rotate(263deg);
+  }
+}
+@keyframes raise8 {
+  to {
+    bottom: 150vh;
+    transform: scale(1.8) rotate(263deg);
+  }
+}/*# sourceMappingURL=sass-file.css.map */
